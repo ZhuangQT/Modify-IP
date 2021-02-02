@@ -81,7 +81,7 @@ namespace IP_Change_Wpf
         private void cb_target_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var aa = sender as ComboBox;
-            if (sender as ComboBox != null)
+            if (sender as ComboBox != null && (sender as ComboBox).SelectedIndex != -1)
             {
                 tb_dns.Text = dic[(sender as ComboBox).SelectedIndex]["dns"].ToString();
                 tb_IP.Text = dic[(sender as ComboBox).SelectedIndex]["IP"].ToString();
@@ -166,6 +166,8 @@ namespace IP_Change_Wpf
         }
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
+            cb_target.Text = "";
+            cb_target_his.Text = "";
             tb_dns.Text = "";
             tb_IP.Text = "";
             tb_mrwg.Text = "";

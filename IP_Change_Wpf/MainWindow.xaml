@@ -102,15 +102,15 @@
                                 <RowDefinition Height="*"/>
 
                             </Grid.RowDefinitions>
-                            <ComboBox  Grid.Row="1" Margin="10,0,0,0" Height="30" Width="200"
+                            <ComboBox  Grid.Row="1"  Margin="10,0,0,0" Height="30" Width="200"
                     materialDesign:HintAssist.Hint="选择目标IP"
                     materialDesign:TextFieldAssist.PrefixText=""
-                    IsEditable="True" Name="cb_target"   >
+                    IsEditable="False" Name="cb_target"   >
                             </ComboBox>
                             <ComboBox  Grid.Row="0" Margin="10,0,0,0" Height="30" Width="200"
                     materialDesign:HintAssist.Hint="历史记录"
                     materialDesign:TextFieldAssist.PrefixText=""
-                    IsEditable="True" Name="cb_target_his" SelectionChanged="cb_target_SelectionChanged"  >
+                    IsEditable="False" Name="cb_target_his" SelectionChanged="cb_target_SelectionChanged"  >
 
                             </ComboBox>
                         </Grid>
